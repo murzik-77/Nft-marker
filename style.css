@@ -5,7 +5,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   color: #fff;
   background-color: #2b2b2b;
-  margin: 0;
 }
 
 h1,
@@ -51,40 +50,108 @@ header {
   background: #a259ff;
 }
 
-.image {
+/* section about */
+
+.section-hero {
   display: flex;
-  align-self: stretch;
+  justify-content: center;
+  gap: 120px;
+  padding: 80px 0;
 }
 
-h2 {
-  font-family: Work Sans;
-  font-size: 51px;
-  font-style: normal;
+.hero-text {
+  max-width: 510px;
+}
+
+.hero-text h1 {
+  margin-bottom: 20px;
+  font-size: 67px;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%; /* 73.7px */
   text-transform: capitalize;
 }
 
-p {
-  font-family: Work Sans;
+.hero-text p {
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 35.2px */
   text-transform: capitalize;
 }
 
-.conteiner {
+.btn-get-started {
   display: flex;
-  gap: 60px
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+  margin: 30px 0 30px;
+  padding: 0px 50px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: #a259ff;
 }
 
-.create-account {
+.additional-info {
+  display: flex;
+}
+
+.card-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
+  width: 150px;
+}
+
+.card-info-value {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
+
+.card-info-text {
+  font-size: 23.99px;
+  font-weight: 400;
+  line-height: 160%; /* 38.384px */
+  text-transform: capitalize;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #3b3b3b;
+}
+
+.artist-info h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+
+.artist-info p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 label {
@@ -116,3 +183,72 @@ label {
 @media screen and (max-widht: 1024) {
   
 }
+
+.nft-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  background-color: #3b3b3b;
+}
+
+.nft-card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+}
+
+.nft-card-info-wrapper {
+  padding: 20px 30px 25px;
+}
+
+.nft-card-info h5 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+
+.nft-card-info p {
+  display: flex;
+  gap: 12px;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.price,
+.highest-bid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-text,
+.highest-bid-text {
+  color: #858584;
+  font-family: Space Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+}
+
+.price-value,
+.highest-bid-value {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
